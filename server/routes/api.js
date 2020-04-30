@@ -94,7 +94,7 @@ router.get('/cancer2', function(req, res, next) {
     axios.get(url, {headers: headers})
      .then(function(response) {
         console.log(response.data)
-        res.json(response.data)
+        res.json(tfbc_cancer)
     })
     .catch(function(err){
         console.log(err)
